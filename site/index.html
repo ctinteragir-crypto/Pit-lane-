@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pit Lane | Estética Automotiva</title>
+<meta name="description" content="Pit Lane Estética Automotiva: lavagem técnica, higienização interna, polimento, vitrificação e mais. Orçamento rápido pelo WhatsApp.">
+<meta name="theme-color" content="#0b0b0b">
+<meta property="og:title" content="Pit Lane | Estética Automotiva">
+<meta property="og:description" content="Lavagem técnica, polimento, vitrificação e higienização. Orçamento pelo WhatsApp.">
+<meta property="og:image" content="img/polimento-tecnico.jpg">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0b0b; --bg2:#141414; --bg3:#1c1c1c; --line:#2a2a2a;
+  --y:#f7d400; --y2:#ffe54a; --gold:#8a7400;
+  --tx:#f4f4f2; --mut:#a8a8a2; --wa:#25d366;
+  --r:14px; --max:1180px;
+  --display:"Anton",Impact,"Arial Narrow",sans-serif;
+  --cond:"Barlow Condensed","Arial Narrow",sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--tx);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{width:min(var(--max),100% - 32px);margin-inline:auto}
+.check{background:conic-gradient(var(--y) 25%,transparent 0 50%,var(--y) 0 75%,transparent 0) 0 0/var(--s,18px) var(--s,18px)}
+
+/* header */
+.top{position:sticky;top:0;z-index:50;background:rgba(11,11,11,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:72px}
+.top .logo img{height:34px;width:auto}
+.top nav{margin-left:auto;display:flex;gap:28px;font:600 16px/1 var(--cond);letter-spacing:.06em;text-transform:uppercase}
+.top nav a{text-decoration:none;color:var(--mut);transition:color .2s}
+.top nav a:hover{color:var(--y)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--y);color:#0b0b0b;font:700 17px/1 var(--cond);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:16px 26px;border-radius:999px;transition:transform .15s,background .2s;white-space:nowrap}
+.btn:hover{background:var(--y2);transform:translateY(-1px)}
+.btn:focus-visible,a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--y);outline-offset:3px}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-ghost{background:transparent;color:var(--tx);box-shadow:inset 0 0 0 2px var(--line)}
+.btn-ghost:hover{background:transparent;box-shadow:inset 0 0 0 2px var(--y);color:var(--y)}
+.btn-sm{padding:12px 18px;font-size:15px}
+.top .btn{padding:12px 18px;font-size:15px}
+
+/* hero */
+.hero{position:relative;padding:72px 0 88px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20% -30% auto auto;width:60vw;height:120%;--s:64px;opacity:.07;transform:rotate(-14deg);background:conic-gradient(var(--y) 25%,transparent 0 50%,var(--y) 0 75%,transparent 0) 0 0/var(--s) var(--s);mask:radial-gradient(closest-side,#000 40%,transparent);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font:600 15px/1 var(--cond);letter-spacing:.18em;text-transform:uppercase;color:var(--y)}
+.eyebrow i{display:block;width:36px;height:12px;--s:6px}
+h1{font:400 clamp(48px,7.4vw,96px)/.95 var(--display);text-transform:uppercase;letter-spacing:.005em;margin:22px 0 24px}
+h1 em{font-style:normal;color:var(--y)}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--mut);max-width:34ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.facts{display:flex;flex-wrap:wrap;gap:28px 40px;margin-top:48px;padding-top:28px;border-top:1px solid var(--line)}
+.facts b{display:block;font:400 34px/1 var(--display);color:var(--tx)}
+.facts span{font:600 14px/1.3 var(--cond);letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.hero-img{position:relative;justify-self:end;width:100%;max-width:460px}
+.hero-img img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.hero-img .flag{position:absolute;left:-28px;bottom:36px;width:120px;height:72px;--s:24px;border-radius:4px;box-shadow:0 10px 30px rgba(0,0,0,.5);background-color:#0b0b0b}
+.hero-img .tag{position:absolute;right:-12px;top:28px;background:var(--y);color:#0b0b0b;font:700 15px/1.15 var(--cond);letter-spacing:.06em;text-transform:uppercase;padding:12px 16px;border-radius:10px;transform:rotate(3deg)}
+
+/* ribbon */
+.ribbon{border-block:1px solid var(--line);background:var(--bg2);overflow:hidden}
+.ribbon .track{display:flex;gap:44px;padding:18px 0;width:max-content;animation:slide 40s linear infinite;font:400 22px/1 var(--display);text-transform:uppercase;letter-spacing:.03em;color:var(--mut)}
+.ribbon .track span{display:flex;align-items:center;gap:44px}
+.ribbon .track span::after{content:"";width:22px;height:11px;--s:5.5px;background:conic-gradient(var(--y) 25%,transparent 0 50%,var(--y) 0 75%,transparent 0) 0 0/var(--s) var(--s)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:96px 0}
+.sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:24px;margin-bottom:40px}
+h2{font:400 clamp(38px,5vw,64px)/1 var(--display);text-transform:uppercase}
+h2 em{font-style:normal;color:var(--y)}
+.sec-head p{color:var(--mut);max-width:44ch}
+
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
+.filters button{font:600 15px/1 var(--cond);letter-spacing:.08em;text-transform:uppercase;color:var(--mut);background:var(--bg2);border:1px solid var(--line);padding:12px 18px;border-radius:999px;cursor:pointer;transition:all .2s}
+.filters button:hover{color:var(--tx);border-color:#444}
+.filters button[aria-pressed="true"]{background:var(--y);color:#0b0b0b;border-color:var(--y)}
+
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:border-color .25s,transform .25s}
+.card:hover{border-color:#3a3a3a;transform:translateY(-3px)}
+.card[hidden]{display:none}
+.ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:#000}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.card:hover .ph img{transform:scale(1.04)}
+.ph figcaption{position:absolute;left:14px;top:14px;background:rgba(11,11,11,.8);backdrop-filter:blur(6px);font:600 13px/1 var(--cond);letter-spacing:.1em;text-transform:uppercase;color:var(--y);padding:8px 10px;border-radius:6px}
+.body{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.card h3{font:700 26px/1.05 var(--cond);text-transform:uppercase;letter-spacing:.01em}
+.short{color:var(--mut);font-size:16px;margin-top:10px}
+.chip{align-self:flex-start;margin-top:14px;font:600 13px/1 var(--cond);letter-spacing:.08em;text-transform:uppercase;color:var(--y);border:1px solid rgba(247,212,0,.35);padding:7px 10px;border-radius:6px}
+details{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+summary{cursor:pointer;list-style:none;font:600 15px/1.3 var(--cond);letter-spacing:.06em;text-transform:uppercase;color:var(--tx);display:flex;align-items:center;justify-content:space-between}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 22px/1 var(--body);color:var(--y);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{font-size:15px;color:var(--mut);margin-top:10px;line-height:1.6}
+.foot{margin-top:auto;padding-top:20px;display:flex;align-items:end;justify-content:space-between;gap:12px}
+.price small{display:block;font:600 12px/1 var(--cond);letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-bottom:6px}
+.price span{font:400 30px/1 var(--display);color:var(--y)}
+.note{color:var(--mut);font-size:14px;margin-top:28px}
+
+/* steps */
+.steps-sec{background:var(--bg2);border-block:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.step{position:relative;padding:28px 24px;border-radius:var(--r);background:var(--bg);border:1px solid var(--line)}
+.step::before{counter-increment:s;content:"0" counter(s);font:400 54px/1 var(--display);color:var(--y);display:block;margin-bottom:18px}
+.step h3{font:700 22px/1.1 var(--cond);text-transform:uppercase;margin-bottom:8px}
+.step p{color:var(--mut);font-size:16px}
+
+/* cta */
+.cta{position:relative;overflow:hidden;text-align:center;padding:110px 0}
+.cta::before,.cta::after{content:"";position:absolute;top:0;bottom:0;width:min(18vw,220px);--s:36px;opacity:.9;background:conic-gradient(var(--y) 25%,transparent 0 50%,var(--y) 0 75%,transparent 0) 0 0/var(--s) var(--s)}
+.cta::before{left:0;mask:linear-gradient(90deg,#000,transparent)}
+.cta::after{right:0;mask:linear-gradient(-90deg,#000,transparent)}
+.cta .wrap{position:relative;z-index:1}
+.cta h2{font-size:clamp(42px,6.4vw,84px)}
+.cta p{color:var(--mut);margin:18px auto 34px;max-width:46ch}
+.btn-wa{background:var(--wa);color:#06280f}
+.btn-wa:hover{background:#3ee07a}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:44px 0 110px;color:var(--mut);font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+footer img{height:30px;width:auto}
+footer a{text-decoration:none;color:var(--tx)}
+footer a:hover{color:var(--y)}
+
+/* floating */
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.5);transition:transform .2s}
+.fab:hover{transform:scale(1.06)}
+.fab svg{width:32px;height:32px;fill:#fff}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1000px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .hero .wrap{grid-template-columns:1fr;gap:48px}
+  .hero-img{justify-self:start;max-width:520px}
+}
+@media (max-width:720px){
+  .top nav{display:none}
+  .top .wrap{justify-content:space-between}
+  .top .logo img{height:28px}
+  .hero{padding:44px 0 64px}
+  .hero-img .flag{left:-8px;width:88px;height:52px;--s:17.6px}
+  .hero-img .tag{right:12px;top:16px}
+  .fab{width:54px;height:54px}
+  section{padding:72px 0}
+  .grid,.steps{grid-template-columns:1fr}
+  .facts{gap:22px 28px}
+  .cta::before,.cta::after{width:64px;--s:21.33px;opacity:.6}
+  .btn{padding:15px 22px}
+  .cta-row .btn{flex:1 1 auto}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="Pit Lane, início"><img src="img/logo-640.png" alt="Pit Lane" width="640" height="118"></a>
+    <nav aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Pit%20Lane%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Orçamento</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow"><i class="check"></i>Estética automotiva</span>
+        <h1>Seu carro<br>no <em>box certo.</em></h1>
+        <p class="lead">Lavagem técnica, polimento, vitrificação e higienização feitos com processo, produto profissional e atenção a cada detalhe.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Pit%20Lane%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>
+            Chamar no WhatsApp</a>
+          <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+        </div>
+        <div class="facts">
+          <div><b>15</b><span>serviços</span></div>
+          <div><b>5 anos</b><span>de proteção na<br>vitrificação 9H</span></div>
+          <div><b>R$ 150</b><span>lavagem técnica<br>a partir de</span></div>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="img/polimento-tecnico.jpg" alt="Profissional da Pit Lane fazendo polimento técnico na porta de um carro" width="800" height="1066" fetchpriority="high">
+        <div class="flag check" aria-hidden="true"></div>
+        <div class="tag">Polimento<br>técnico</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ribbon" aria-hidden="true">
+    <div class="track">
+      <span>Lavagem técnica</span><span>Polimento</span><span>Vitrificação</span><span>Higienização</span><span>Faróis</span><span>Motor e chassi</span>
+      <span>Lavagem técnica</span><span>Polimento</span><span>Vitrificação</span><span>Higienização</span><span>Faróis</span><span>Motor e chassi</span>
+    </div>
+  </div>
+
+  <section id="servicos">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Nossos <em>serviços</em></h2>
+        <p>Escolha o serviço e peça seu orçamento direto pelo WhatsApp. O valor final depende do porte e do estado do veículo.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar serviços">
+        <button type="button" data-f="all" aria-pressed="true">Todos</button>
+        <button type="button" data-f="lavagem" aria-pressed="false">Lavagem</button>
+        <button type="button" data-f="interior" aria-pressed="false">Interior</button>
+        <button type="button" data-f="pintura" aria-pressed="false">Pintura e proteção</button>
+        <button type="button" data-f="detalhes" aria-pressed="false">Detalhes</button>
+      </div>
+      <div class="grid">
+<article class="card" data-cat="lavagem" id="lavagem-tecnica">
+  <figure class="ph"><img src="img/lavagem-tecnica.jpg" alt="Lavagem Técnica, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="1066"><figcaption>Lavagem</figcaption></figure>
+  <div class="body">
+    <h3>Lavagem Técnica</h3>
+    <p class="short">Limpeza detalhada por dentro e por fora, finalizada com nano selante na pintura.</p>
+    
+    <details><summary>O que está incluso</summary><p>Um cuidado completo pensado para limpar, proteger e preservar a estética do veículo. O serviço inclui aspiração interna, limpeza dos plásticos, vidros e painel, seguida de pré-lavagem e lavagem detalhada. A finalização conta com a aplicação de nano selante na pintura, proporcionando proteção, brilho e efeito hidrorrepelente, juntamente com o selante dos pneus, realçando o acabamento e completando o cuidado externo do veículo.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 150,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20lavagem%20t%C3%A9cnica." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+<article class="card" data-cat="interior" id="higienizacao-interna">
+  <figure class="ph"><img src="img/higienizacao-interna.jpg" alt="Higienização Interna, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="1066"><figcaption>Interior</figcaption></figure>
+  <div class="body">
+    <h3>Higienização Interna</h3>
+    <p class="short">Higienização profunda com ação bactericida e ozonização para neutralizar odores.</p>
+    
+    <details><summary>O que está incluso</summary><p>Um cuidado completo para renovar o interior do veículo. O serviço contempla higienização profunda com ação bactericida nos plásticos, painel, teto, vidros, carpetes e bancos, removendo sujeiras e impurezas acumuladas. A finalização é realizada com uma sessão de ozonização, que auxilia na neutralização de odores e proporciona uma sensação de ambiente mais limpo, fresco e renovado.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 400,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20higieniza%C3%A7%C3%A3o%20interna." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+<article class="card" data-cat="pintura" id="polimento-tecnico">
+  <figure class="ph"><img src="img/polimento-tecnico.jpg" alt="Polimento Técnico, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="1066"><figcaption>Pintura e proteção</figcaption></figure>
+  <div class="body">
+    <h3>Polimento Técnico</h3>
+    <p class="short">Correção de riscos e marcas do verniz, devolvendo brilho e profundidade à cor.</p>
+    
+    <details><summary>O que está incluso</summary><p>Um tratamento completo desenvolvido para revitalizar, corrigir e valorizar a pintura do veículo. O processo começa com aspiração interna, limpeza dos plásticos, vidros e painel, pré-lavagem e lavagem detalhada, preparando o veículo para as etapas de correção. Em seguida, é realizada a descontaminação da pintura, removendo contaminantes aderidos à superfície e reduzindo ao máximo a contaminação das boinas durante o polimento. Plásticos e borrachas são cuidadosamente isolados, garantindo maior segurança e precisão durante o processo. O polimento técnico atua na correção e redução de riscos, marcas e imperfeições do verniz, recuperando o brilho, a profundidade da cor e a uniformidade da pintura. A finalização inclui a aplicação de selante nos pneus, proporcionando um acabamento mais refinado e completando a renovação estética do veículo.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 1.400,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20polimento%20t%C3%A9cnico." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+<article class="card" data-cat="pintura" id="vitrificacao-9h">
+  <figure class="ph"><img src="img/vitrificacao-9h.jpg" alt="Vitrificação 9H, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="1066"><figcaption>Pintura e proteção</figcaption></figure>
+  <div class="body">
+    <h3>Vitrificação 9H</h3>
+    <p class="short">Camada de proteção sobre o verniz, com hidrorrepelência e brilho intenso.</p>
+    <span class="chip">Até 5 anos</span>
+    <details><summary>O que está incluso</summary><p>Realizada após o Polimento Técnico, a Vitrificação 9H é aplicada sobre a pintura já corrigida e preparada, formando uma camada de proteção sobre o verniz. O tratamento proporciona proteção por até 5 anos, além de excelente hidrorrepelência, resistência contra contaminantes e agentes externos e maior facilidade na limpeza e manutenção. Também intensifica o brilho e a profundidade da cor, mantendo a pintura protegida e com aparência renovada por muito mais tempo.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 500,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20vitrifica%C3%A7%C3%A3o%209H." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+<article class="card" data-cat="pintura" id="vitrificacao-7h">
+  <figure class="ph"><img src="img/vitrificacao-7h.jpg" alt="Vitrificação 7H, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="1066"><figcaption>Pintura e proteção</figcaption></figure>
+  <div class="body">
+    <h3>Vitrificação 7H</h3>
+    <p class="short">Proteção da pintura com hidrorrepelência e realce de brilho e cor.</p>
+    <span class="chip">Até 2 anos</span>
+    <details><summary>O que está incluso</summary><p>Realizada após o Polimento Técnico, a Vitrificação 7H é aplicada sobre a pintura já corrigida e preparada, formando uma camada de proteção sobre o verniz. O tratamento proporciona proteção por até 2 anos, com excelente hidrorrepelência, resistência contra contaminantes e agentes externos e maior facilidade na limpeza e manutenção. Também realça o brilho e a profundidade da cor, preservando o acabamento e mantendo a pintura protegida e valorizada por mais tempo.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 300,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20vitrifica%C3%A7%C3%A3o%207H." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+<article class="card" data-cat="detalhes" id="vitrificacao-plasticos">
+  <figure class="ph"><img src="img/vitrificacao-plasticos.jpg" alt="Vitrificação dos Plásticos, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="1066"><figcaption>Detalhes</figcaption></figure>
+  <div class="body">
+    <h3>Vitrificação dos Plásticos</h3>
+    <p class="short">Protege plásticos e borrachas contra ressecamento e desbotamento.</p>
+    
+    <details><summary>O que está incluso</summary><p>Tratamento desenvolvido para proteger e revitalizar plásticos e borrachas, realçando a tonalidade original e proporcionando um aspecto mais uniforme e renovado. A aplicação do vitrificador cria uma camada de proteção sobre a superfície, ajudando a reduzir os efeitos do ressecamento, desbotamento e da exposição a agentes externos. O tratamento também proporciona hidrorrepelência e maior facilidade na limpeza e manutenção, preservando o acabamento e a aparência dessas peças por mais tempo.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 250,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20vitrifica%C3%A7%C3%A3o%20dos%20pl%C3%A1sticos." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+<article class="card" data-cat="detalhes" id="cristalizacao-vidro">
+  <figure class="ph"><img src="img/cristalizacao-vidro.jpg" alt="Cristalização do Vidro, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="1066"><figcaption>Detalhes</figcaption></figure>
+  <div class="body">
+    <h3>Cristalização do Vidro</h3>
+    <p class="short">Camada hidrorrepelente nos vidros para mais visibilidade na chuva.</p>
+    <span class="chip">Até 6 meses</span>
+    <details><summary>O que está incluso</summary><p>O processo começa com a limpeza e descontaminação de todos os vidros, preparando as superfícies para a aplicação do cristalizador. Em seguida, o produto é aplicado formando uma camada hidrorrepelente, que dificulta a aderência de água e sujeira. O tratamento proporciona melhor visibilidade em dias de chuva, favorecendo o escoamento da água e contribuindo para uma condução mais segura. Também reduz o acúmulo de sujeira e facilita a limpeza e manutenção dos vidros. A proteção pode ter durabilidade de até 6 meses, podendo variar conforme as condições de uso do veículo e, principalmente, a frequência de utilização e o estado das palhetas do para-brisa.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 250,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20cristaliza%C3%A7%C3%A3o%20dos%20vidros." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+<article class="card" data-cat="interior" id="plasticos-internos">
+  <figure class="ph"><img src="img/plasticos-internos.jpg" alt="Revitalização dos Plásticos Internos, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="1066"><figcaption>Interior</figcaption></figure>
+  <div class="body">
+    <h3>Revitalização dos Plásticos Internos</h3>
+    <p class="short">Renova o painel e os plásticos internos e protege contra o sol.</p>
+    <span class="chip">Até 6 meses</span>
+    <details><summary>O que está incluso</summary><p>Tratamento desenvolvido para renovar e preservar os plásticos internos do veículo, recuperando a aparência e realçando o brilho das superfícies. A aplicação cria uma camada de proteção contra a exposição solar e o acúmulo de sujeira, ajudando a conservar o aspecto dos plásticos e facilitando a manutenção no dia a dia. O tratamento oferece durabilidade de até 6 meses, mantendo o interior com aparência renovada e bem cuidada por mais tempo.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 170,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20revitaliza%C3%A7%C3%A3o%20dos%20pl%C3%A1sticos%20internos." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+<article class="card" data-cat="detalhes" id="plasticos-externos">
+  <figure class="ph"><img src="img/plasticos-externos.jpg" alt="Revitalização dos Plásticos Externos, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="1066"><figcaption>Detalhes</figcaption></figure>
+  <div class="body">
+    <h3>Revitalização dos Plásticos Externos</h3>
+    <p class="short">Recupera a cor original de plásticos e borrachas externas.</p>
+    <span class="chip">Até 3 meses</span>
+    <details><summary>O que está incluso</summary><p>Tratamento desenvolvido para revitalizar e realçar a cor dos plásticos e borrachas externas, recuperando o aspecto original e proporcionando um acabamento mais uniforme e renovado. A aplicação cria uma camada de proteção contra exposição ao sol, sujeira e agentes externos, contribuindo para a conservação e facilitando a manutenção das superfícies. O tratamento possui durabilidade de até 3 meses, mantendo plásticos e borrachas protegidos e com aparência renovada por mais tempo.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 170,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20revitaliza%C3%A7%C3%A3o%20dos%20pl%C3%A1sticos%20externos." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+<article class="card" data-cat="interior" id="banco-couro">
+  <figure class="ph"><img src="img/banco-couro.jpg" alt="Higienização de Banco de Couro, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="1066"><figcaption>Interior</figcaption></figure>
+  <div class="body">
+    <h3>Higienização de Banco de Couro</h3>
+    <p class="short">Limpeza profunda e proteção específica que revitaliza o couro.</p>
+    
+    <details><summary>O que está incluso</summary><p>Tratamento desenvolvido para limpar, revitalizar e preservar os bancos de couro do veículo. O processo começa com uma limpeza profunda, removendo sujeiras e resíduos acumulados na superfície e nos detalhes do couro. Após a higienização, é aplicada uma proteção específica para o couro, que ajuda a conservar e revitalizar o material, recuperando sua aparência e proporcionando um acabamento renovado e aspecto de novo.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 200,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20higieniza%C3%A7%C3%A3o%20dos%20bancos%20de%20couro." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+<article class="card" data-cat="interior" id="banco-tecido">
+  <figure class="ph"><img src="img/banco-tecido.jpg" alt="Higienização de Banco de Tecido, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="1066"><figcaption>Interior</figcaption></figure>
+  <div class="body">
+    <h3>Higienização de Banco de Tecido</h3>
+    <p class="short">Limpeza e extração que removem manchas, poeira e odores do estofado.</p>
+    <span class="chip">Impermeabilização até 6 meses</span>
+    <details><summary>O que está incluso</summary><p>Tratamento desenvolvido para proporcionar uma limpeza profunda dos estofados, removendo sujeiras e resíduos acumulados nas fibras do tecido. O processo é realizado por meio de limpeza e extração, auxiliando na remoção de manchas, poeira, odores e outras impurezas, devolvendo aos bancos uma aparência mais limpa, renovada e bem cuidada. Após a higienização, também é possível realizar a impermeabilização dos bancos, criando uma camada protetora que ajuda a reduzir a absorção de líquidos e a aderência de sujeiras, facilitando a limpeza e contribuindo para a conservação do tecido. A proteção possui durabilidade de até 6 meses, podendo variar conforme o uso e os cuidados com o veículo.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 350,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20higieniza%C3%A7%C3%A3o%20dos%20bancos%20de%20tecido." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+<article class="card" data-cat="detalhes" id="farois">
+  <figure class="ph"><img src="img/farois.jpg" alt="Revitalização dos Faróis, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="1066"><figcaption>Detalhes</figcaption></figure>
+  <div class="body">
+    <h3>Revitalização dos Faróis</h3>
+    <p class="short">Remove o amarelado e devolve a transparência das lentes.</p>
+    <span class="chip">Proteção até 1 ano</span>
+    <details><summary>O que está incluso</summary><p>Tratamento desenvolvido para recuperar a transparência e renovar a aparência das lentes dos faróis, removendo o aspecto amarelado e corrigindo até 99% dos craquelados superficiais, conforme o estado da lente. O processo inclui a preparação e correção da superfície, seguida da revitalização com vapor de polímero, devolvendo transparência, brilho e uniformidade aos faróis. Para finalizar, é aplicado um vitrificador específico para faróis, criando uma camada de proteção que ajuda a preservar o resultado e proteger a lente contra agentes externos, com durabilidade de até 1 ano.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 400,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20revitaliza%C3%A7%C3%A3o%20dos%20far%C3%B3is." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+<article class="card" data-cat="lavagem" id="lavagem-motor">
+  <figure class="ph land"><img src="img/lavagem-motor.jpg" alt="Lavagem de Motor, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="533"><figcaption>Lavagem</figcaption></figure>
+  <div class="body">
+    <h3>Lavagem de Motor</h3>
+    <p class="short">Limpeza segura do cofre do motor, com proteção dos componentes sensíveis.</p>
+    
+    <details><summary>O que está incluso</summary><p>Serviço desenvolvido para proporcionar uma limpeza completa e segura do cofre do motor, com proteção dos componentes mais sensíveis durante todo o processo. A lavagem remove óleo, graxa, poeira, resíduos minerais e sujeiras acumuladas, devolvendo ao conjunto um aspecto limpo, renovado e bem cuidado. Além da melhora estética, manter o cofre do motor limpo facilita a visualização e identificação de possíveis vazamentos, contribuindo para um melhor acompanhamento das condições do veículo. Para finalizar, é aplicada uma proteção nas superfícies do motor e do cofre, realçando o acabamento e ajudando a conservar a limpeza por mais tempo.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 180,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20lavagem%20de%20motor." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+<article class="card" data-cat="lavagem" id="lavagem-chassi">
+  <figure class="ph"><img src="img/lavagem-chassi.jpg" alt="Lavagem de Chassi, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="1066"><figcaption>Lavagem</figcaption></figure>
+  <div class="body">
+    <h3>Lavagem de Chassi</h3>
+    <p class="short">Remove barro e incrustações da parte de baixo do veículo.</p>
+    
+    <details><summary>O que está incluso</summary><p>Serviço desenvolvido para realizar uma limpeza profunda da parte inferior do veículo, removendo barro, sujeiras acumuladas e incrustações minerais presentes no chassi e demais componentes inferiores. Além de recuperar o aspecto limpo e bem cuidado, a lavagem facilita a visualização de possíveis vazamentos, danos, desgastes ou outras irregularidades, já que elimina resíduos que podem dificultar a inspeção dessas áreas. A remoção periódica dessas sujeiras também contribui para a conservação da parte inferior do veículo, principalmente em carros que circulam frequentemente por estradas de terra, lama ou locais com grande acúmulo de resíduos.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 250,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20lavagem%20de%20chassi." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+<article class="card" data-cat="pintura" id="selante-1-ano">
+  <figure class="ph"><img src="img/selante-1-ano.jpg" alt="Aplicação de Selante 1 Ano, serviço realizado pela Pit Lane" loading="lazy" decoding="async" width="800" height="1066"><figcaption>Pintura e proteção</figcaption></figure>
+  <div class="body">
+    <h3>Aplicação de Selante 1 Ano</h3>
+    <p class="short">Correção leve da pintura e proteção de longa duração.</p>
+    <span class="chip">Até 1 ano</span>
+    <details><summary>O que está incluso</summary><p>O processo começa com aspiração interna, limpeza dos plásticos, vidros e painel, pré-lavagem e lavagem detalhada, garantindo a preparação adequada do veículo. Em seguida, é realizada uma etapa de correção da pintura, que ajuda a minimizar riscos leves, pequenas marcas e imperfeições superficiais, recuperando o brilho, realçando a cor e proporcionando um acabamento mais uniforme e renovado. Para finalizar, é aplicada uma proteção de longa duração, que proporciona hidrorrepelência, proteção contra agentes externos, menor aderência de sujeira e maior facilidade nas lavagens de manutenção, ajudando a conservar a pintura por até 1 ano.</p></details>
+    <div class="foot">
+      <p class="price"><small>a partir de</small><span>R$ 800,00</span></p>
+      <a class="btn btn-sm" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20aplica%C3%A7%C3%A3o%20de%20selante%201%20ano." target="_blank" rel="noopener">Pedir orçamento</a>
+    </div>
+  </div>
+</article>
+      </div>
+      <p class="note">Valores "a partir de". O preço final é confirmado após a avaliação do veículo.</p>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="steps-sec">
+    <div class="wrap">
+      <div class="sec-head"><h2>Como <em>funciona</em></h2></div>
+      <div class="steps">
+        <div class="step rv"><h3>Chame no WhatsApp</h3><p>Diga qual serviço você quer e mande fotos do carro, se puder.</p></div>
+        <div class="step rv"><h3>Avaliação</h3><p>Avaliamos o estado do veículo e passamos o orçamento.</p></div>
+        <div class="step rv"><h3>Agendamento</h3><p>Você escolhe o melhor dia e horário para trazer o carro.</p></div>
+        <div class="step rv"><h3>Entrega</h3><p>Seu carro volta limpo, protegido e com acabamento de box.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="cta">
+    <div class="wrap">
+      <h2>Bora para o <em>pit stop?</em></h2>
+      <p>Mande uma mensagem e receba seu orçamento. Atendimento pelo WhatsApp (11) 96193-7934.</p>
+      <a class="btn btn-wa" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Pit%20Lane%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>
+        Falar no WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="img/logo-640.png" alt="Pit Lane" width="640" height="118">
+    <p>WhatsApp: <a href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Pit%20Lane%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">(11) 96193-7934</a></p>
+    <p>© <span id="y">2026</span> Pit Lane Estética Automotiva</p>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/5511961937934?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Pit%20Lane%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>
+</a>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+const bs=document.querySelectorAll('.filters button'),cs=document.querySelectorAll('.card');
+bs.forEach(b=>b.addEventListener('click',()=>{
+  bs.forEach(x=>x.setAttribute('aria-pressed',x===b));
+  const f=b.dataset.f;cs.forEach(c=>c.hidden=!(f==='all'||c.dataset.cat===f));
+}));
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+}else document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'));
+</script>
+</body>
+</html>
